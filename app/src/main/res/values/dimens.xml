@@ -1,0 +1,68 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="profile_width">75dp</dimen>
+    <dimen name="profile_height">75dp</dimen>
+    <dimen name="drawer_width">320dp</dimen>
+
+    <dimen name="view_height">1dp</dimen>
+    <dimen name="map_dot_marker_size">12dp</dimen>
+    <dimen name="doc_btn_text_size1">25sp</dimen>
+    <dimen name="doc_btn_text_size">18sp</dimen>
+
+    <dimen name="tv_text_size">15sp</dimen>
+    <dimen name="header_height">125dp</dimen>
+    <dimen name="detail_backdrop_height1">500dp</dimen>
+
+    <dimen name="spacing_xsmall">2dp</dimen>
+    <dimen name="spacing_medium">8dp</dimen>
+    <dimen name="spacing_large">50dp</dimen>
+    <dimen name="spacing_xlarge">32dp</dimen>
+
+    <dimen name="elevation_low">9dp</dimen>
+    <dimen name="elevation_high">12dp</dimen>
+    <dimen name="status_bar_height">25dp</dimen>
+
+    <dimen name="detail_backdrop_height">256dp</dimen>
+    <dimen name="card_margin">16dp</dimen>
+
+    <dimen name="list_item_avatar_size">40dp</dimen>
+
+    //facebook auth
+
+    <dimen name="dim5">5dp</dimen>
+    <dimen name="dim8">8dp</dimen>
+    <dimen name="dim10">10dp</dimen>
+    <dimen name="dim12">12dp</dimen>
+    <dimen name="dim15">15dp</dimen>
+    <dimen name="dim20">20dp</dimen>
+    <dimen name="dim30">30dp</dimen>
+    <dimen name="dim50">50dp</dimen>
+    <dimen name="dim150">150dp</dimen>
+    <dimen name="dim200">200dp</dimen>
+    <dimen name="dim250">250dp</dimen>
+    <dimen name="dim350">350dp</dimen>
+    <dimen name="splash_txt">24sp</dimen>
+    <dimen name="alert_width">280dp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="text_size_large">22sp</dimen>
+    <dimen name="dim100">100dp</dimen>
+    <dimen name="dim35">35dp</dimen>
+    <dimen name="dim170">170dp</dimen>
+    <dimen name="dim75">75dp</dimen>
+    <dimen name="custom_tab_layout_height">72dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="tab_label">14sp</dimen>
+    <dimen name="list_item_spacing">16dp</dimen>
+    <dimen name="list_item_spacing_half">8dp</dimen>
+    <dimen name="logo_side">150dp</dimen>
+    <dimen name="headline_size">14sp</dimen>
+    <dimen name="content_size">14sp</dimen>
+</resources>

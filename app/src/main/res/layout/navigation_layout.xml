@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/drawer_btn_profile"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="20dp"
+        android:drawableStart="@drawable/ic_user"
+        android:onClick="onRiderProfile"
+        android:text="@string/btn_profile"
+        android:textAlignment="textStart"
+        android:textAllCaps="false" />
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="20dp"
+        android:drawableStart="@drawable/ic_accountings"
+        android:onClick="goUserAccount"
+        android:text="@string/btn_account"
+        android:textAlignment="textStart"
+        android:textAllCaps="false" />
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="20dp"
+        android:drawableStart="@drawable/ic_pin"
+        android:onClick="goUserTracking"
+        android:text="@string/btn_location_tracking"
+        android:textAlignment="textStart"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/drawer_btn_ride_history"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="20dp"
+        android:drawableStart="@drawable/ic_history_black_24dp"
+        android:onClick="onRiderRideHistory"
+        android:text="@string/btn_ride_history"
+        android:textAlignment="textStart"
+        android:textAllCaps="false" />
+
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="20dp"
+        android:drawableStart="@drawable/ic_settings"
+        android:onClick="onRiderSettings"
+        android:text="@string/btn_settings"
+        android:textAlignment="textStart"
+        android:textAllCaps="false" />
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="20dp"
+        android:drawableStart="@drawable/ic_tracking"
+        android:onClick="getRiderTrackingActivity"
+        android:text="@string/btn_tracking"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_rider_reference"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="20dp"
+        android:drawableStart="@drawable/ic_reference_24dp"
+        android:onClick="onShowMyUser"
+        android:text="@string/btn_reference"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:visibility="gone" />
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="20dp"
+        android:drawableStart="@drawable/ic_power_settings"
+        android:onClick="onLogoutModalShow"
+        android:text="@string/btn_logout"
+        android:textAlignment="textStart"
+        android:textAllCaps="false" />
+</LinearLayout>

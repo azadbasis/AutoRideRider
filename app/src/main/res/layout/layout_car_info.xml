@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RiderMainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_in_car_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@android:color/black"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ToolBarStyle"
+        app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_100sdp">
+
+        <LinearLayout
+            android:id="@+id/carDetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/carContent"
+            android:orientation="vertical">
+
+            <com.telenav.expandablepager.ExpandablePager
+                android:id="@+id/expandable_pager_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                app:animation_duration="200"
+                app:collapsed_height="@dimen/header_height" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/carContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvCash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:drawableLeft="@drawable/ic_cash"
+                        android:drawablePadding="10dp"
+                        android:gravity="center"
+                        android:text="Cash"
+                        android:textColor="#000000" />
+
+                    <LinearLayout
+                        android:id="@+id/cashInfoContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_estimate_cash_fare"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="#000000" />
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_info"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/ic_passenger"
+                            android:tint="@android:color/darker_gray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:drawablePadding="5dp"
+                            android:text="max." />
+
+                        <TextView
+                            android:id="@+id/tv_max_passenger"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/carRequestContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_50sdp"
+                    android:layout_marginRight="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/btn_car_request"
+                    android:elevation="2dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_ripple"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:tint="@android:color/white"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/tv_confirm_auto_ride"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <com.skyfishjy.library.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:id="@+id/contentScooter"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:rb_color="#FEAF0A"
+                                    app:rb_duration="3000"
+                                    app:rb_radius="6dp"
+                                    app:rb_rippleAmount="4"
+                                    app:rb_scale="4">
+
+                                    <ImageView
+                                        android:id="@+id/iv_auto_ride_bike"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/ic_scooter" />
+                                </com.skyfishjy.library.RippleBackground>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="BIKE"
+                                    android:textColor="#000000" />
+
+                                <TextView
+                                    android:id="@+id/tv_estimate_bike_fare"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:textSize="6dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <com.skyfishjy.library.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:id="@+id/contentAutoRishaw"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:rb_color="#FEAF0A"
+                                    app:rb_duration="3000"
+                                    app:rb_radius="6dp"
+                                    app:rb_rippleAmount="4"
+                                    app:rb_scale="4">
+
+                                    <ImageView
+                                        android:id="@+id/iv_auto_ride_car"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:background="@drawable/oval7"
+                                        android:padding="5dp"
+                                        android:src="@drawable/ic_autoride_hire1" />
+                                    <!--android:src="@drawable/ic_tuk_tuk"-->
+                                </com.skyfishjy.library.RippleBackground>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="CAR"
+                                    android:textColor="#000000" />
+
+                                <TextView
+                                    android:id="@+id/tv_estimate_car_fare"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:textSize="6dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <com.skyfishjy.library.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:id="@+id/contentPremier"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:rb_color="#FEAF0A"
+                                    app:rb_duration="3000"
+                                    app:rb_radius="6dp"
+                                    app:rb_rippleAmount="4"
+                                    app:rb_scale="4">
+
+                                    <ImageView
+                                        android:id="@+id/imgPremier"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/ic_autoride_premier" />
+                                </com.skyfishjy.library.RippleBackground>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="PREMIER"
+                                    android:textColor="#000000" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="BDT 170.27"
+                                    android:textSize="6dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <com.skyfishjy.library.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:id="@+id/contentAutoridex"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:rb_color="#FEAF0A"
+                                    app:rb_duration="3000"
+                                    app:rb_radius="6dp"
+                                    app:rb_rippleAmount="4"
+                                    app:rb_scale="4">
+
+                                    <ImageView
+                                        android:id="@+id/imgAutoridex"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/ic_autoridexx" />
+                                </com.skyfishjy.library.RippleBackground>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="AUTORIDEX"
+                                    android:textColor="#000000" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="BDT 170.27"
+                                    android:textSize="6dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <com.skyfishjy.library.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:id="@+id/contentAutorideHire2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:rb_color="#FEAF0A"
+                                    app:rb_duration="3000"
+                                    app:rb_radius="6dp"
+                                    app:rb_rippleAmount="4"
+                                    app:rb_scale="4">
+
+                                    <ImageView
+                                        android:id="@+id/imgAutorideHire2"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/ic_autoride_hire1" />
+                                </com.skyfishjy.library.RippleBackground>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="HIRE 2HR"
+                                    android:textColor="#000000" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="BDT 850-1,020"
+                                    android:textSize="6dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <com.skyfishjy.library.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:id="@+id/contentAutorideHire4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:rb_color="#FEAF0A"
+                                    app:rb_duration="3000"
+                                    app:rb_radius="6dp"
+                                    app:rb_rippleAmount="4"
+                                    app:rb_scale="4">
+
+                                    <ImageView
+                                        android:id="@+id/imgAutorideHire4"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/ic_autoride_hire2" />
+                                </com.skyfishjy.library.RippleBackground>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="HIRE 4HR"
+                                    android:textColor="#000000" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="BDT 1,500-1,800"
+                                    android:textSize="6dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <!--  <include layout="@layout/carinfo"/>-->
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

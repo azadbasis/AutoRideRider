@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "585633428965",
+    "firebase_url": "https://auto-ride-rider.firebaseio.com",
+    "project_id": "auto-ride-rider",
+    "storage_bucket": "auto-ride-rider.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585633428965:android:5b3aed2d42955dee",
+        "android_client_info": {
+          "package_name": "org.autoride.autoride"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "585633428965-5uu9n3us41tig8rngjsn3lgrv8g4t78q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.autoride.autoride",
+            "certificate_hash": "f79de950207dd53d611ec00b00a50820d8c75129"
+          }
+        },
+        {
+          "client_id": "585633428965-35kjjk3aslbbts6pg5l27v7r4oub3e8j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.autoride.autoride",
+            "certificate_hash": "fd140bfa750b45c2a2f65b5ea61dbba3d6ff3ca2"
+          }
+        },
+        {
+          "client_id": "585633428965-vnqrbv02nn7ued8ie3gkr277v6rvt0i6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuR60yRYZFn4ICKGX_c-yeeeEDdvZtfrc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "585633428965-vnqrbv02nn7ued8ie3gkr277v6rvt0i6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

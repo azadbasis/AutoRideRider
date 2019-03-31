@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.telenav.expandablepager:expandablepager:0.2.1@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/expandablepager-0.2.1.aar/3a98e3303f6c5a9f8e49521f78e690f4/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/expandablepager-0.2.1.aar/3a98e3303f6c5a9f8e49521f78e690f4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/expandablepager-0.2.1.aar/3a98e3303f6c5a9f8e49521f78e690f4/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.telenav.expandablepager/expandablepager/0.2.1/ad4fdbeaea92b18b20e3d279fea851e39c8103a7/expandablepager-0.2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

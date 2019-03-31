@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingEnd="10dp">
+
+    <TextView
+        android:id="@+id/tv_pricing_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="Header"
+        android:textColor="#ff000000"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tv_pricing_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_pricing_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="Fare for your trip will be based \n on our pricing methods \n and others adjustments"
+        android:textColor="#ff000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_pricing_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_pricing_comment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="Base Fare     tk 40 \n Per Kilometer     tk 18 \n Per Minute     tk 2.00 \n Minimum Fare     tk 80.00"
+        android:textColor="#ff000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_pricing_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_pricing_details"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="Message"
+        android:textColor="#ff000000"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_dismiss"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tv_pricing_msg"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Ok"
+        android:textColor="#ff000000"
+        android:textSize="20sp" />
+</RelativeLayout>

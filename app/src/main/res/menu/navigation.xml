@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/navigation_send_money"
+        android:icon="@drawable/ic_send_money"
+        android:title="@string/title_send_money"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+
+
+    <item
+        android:id="@+id/navigation_request_money"
+        android:icon="@drawable/ic_request_money"
+        android:title="@string/title_request_money"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/navigation_load_money"
+        android:icon="@drawable/ic_money_load"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:title="@string/title_load_money" />
+    <item
+        android:id="@+id/navigation_money_transaction"
+        android:icon="@drawable/ic_import_export_black_24dp"
+        android:title="@string/title_money_transaction"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+
+</menu>

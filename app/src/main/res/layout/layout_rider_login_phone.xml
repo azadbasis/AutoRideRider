@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout style="@style/RegistrationParent">
+
+            <LinearLayout style="@style/RegistrationTitleParent">
+
+                <ImageView
+                    style="@style/RegistrationTitleImage"
+                    app:srcCompat="@drawable/ic_phone_android_white_24dp" />
+
+                <TextView
+                    style="@style/RegistrationTitleLabel"
+                    android:text="@string/what_s_your_phone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <ImageView
+                    android:id="@+id/iv_rider_login_mobile_country_flag"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:background="@drawable/circle_gray"
+                    android:padding="2dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ic_nation_america" />
+
+                <Spinner
+                    android:id="@+id/spinner_rider_login_mobile_country_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:gravity="center_vertical"
+                    android:minHeight="45dp"
+                    android:minWidth="60dp"
+                    android:theme="@style/SpinnerStyle" />
+
+                <EditText
+                    android:id="@+id/et_rider_login_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:hint="@string/hint_enter_your_number"
+                    android:inputType="number"
+                    android:minHeight="45dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/underline_color" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        style="@style/RegistrationFAB"
+        android:onClick="onRiderPhoneCheck"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_arrow_registration" />
+</FrameLayout>

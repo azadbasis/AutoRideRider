@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/imageAvator"
+        android:layout_width="76dp"
+        android:layout_height="53dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_person" />
+
+
+    <TextView
+        android:id="@+id/textStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textPhone"
+        android:fontFamily="cursive"
+
+        android:gravity="center"
+        android:text="status"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="@dimen/_20sdp" />
+
+    <TextView
+        android:id="@+id/contactName"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/imageAvator"
+        android:gravity="center"
+        android:text="Azharul Islam"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_20sdp" />
+
+    <TextView
+        android:id="@+id/textPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contactName"
+        android:gravity="center"
+        android:text="01717-121839" />
+
+
+
+    <br.com.simplepass.loading_button_lib.customViews.CircularProgressImageButton
+        android:id="@+id/inviteActionButton"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textStatus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:background="@drawable/bg_round_edges_login_new"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_action_send"
+        android:theme="@style/BluePrimaryButton"
+        app:finalCornerAngle="50dp"
+        app:initialCornerAngle="0dp"
+        app:spinning_bar_color="#FFFFFF"
+        android:layout_marginBottom="@dimen/_20sdp"
+        app:spinning_bar_padding="0dp"
+        app:spinning_bar_width="3dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/revertActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/textPhone"
+        android:layout_margin="11dp"
+        android:elevation="@dimen/_6sdp"
+        app:backgroundTint="@android:color/transparent"
+        app:borderWidth="0dp"
+        app:pressedTranslationZ="@dimen/_12sdp"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+</RelativeLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/smsContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryDark"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextColor="@color/white">
+
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:gravity="center"
+        android:text="Phone Verification"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_18sdp" />
+
+    <TextView
+        android:id="@+id/tvAuthText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:paddingLeft="12dp"
+        android:text="In order to protect the security of your account,please \nadd your phone number.We will send you a text message with a verification code that\n you need to enter the next screen."
+        android:textColor="#B4C0CA" />
+
+
+
+    <LinearLayout
+        android:id="@+id/containerAuthorisedCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/ctv_rider_registration_mobile_otp_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/label_enter_the_verification_code" />
+
+        <LinearLayout
+            android:id="@+id/ll_rider_registration_mobile_otp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <org.autoride.autoride.widgets.OTPEditText
+                android:id="@+id/oet_rider_registration_mobile_one"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/circle_white_with_gray_edge"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/text_4"
+                android:textColorHint="@color/text_hint"
+                android:textCursorDrawable="@color/colorPrimaryDark" />
+
+            <org.autoride.autoride.widgets.OTPEditText
+                android:id="@+id/oet_rider_registration_mobile_two"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/circle_white_with_gray_edge"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/text_4"
+                android:textColorHint="@color/text_hint"
+                android:textCursorDrawable="@color/colorPrimaryDark" />
+
+            <org.autoride.autoride.widgets.OTPEditText
+                android:id="@+id/oet_rider_registration_mobile_three"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/circle_white_with_gray_edge"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/text_4"
+                android:textColorHint="@color/text_hint"
+                android:textCursorDrawable="@color/colorPrimaryDark" />
+
+            <org.autoride.autoride.widgets.OTPEditText
+                android:id="@+id/oet_rider_registration_mobile_four"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/circle_white_with_gray_edge"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/text_4"
+                android:textColorHint="@color/text_hint"
+                android:textCursorDrawable="@color/colorPrimaryDark" />
+
+            <org.autoride.autoride.widgets.OTPEditText
+                android:id="@+id/oet_rider_registration_mobile_five"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/circle_white_with_gray_edge"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/text_4"
+                android:textColorHint="@color/text_hint"
+                android:textCursorDrawable="@color/colorPrimaryDark" />
+
+            <org.autoride.autoride.widgets.OTPEditText
+                android:id="@+id/oet_rider_registration_mobile_six"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/circle_white_with_gray_edge"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/text_4"
+                android:textColorHint="@color/text_hint"
+                android:textCursorDrawable="@color/colorPrimaryDark" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabCheckCode"
+        style="@style/RegistrationFAB"
+        android:onClick="checkSMSCode"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_arrow_registration" />
+
+</LinearLayout>

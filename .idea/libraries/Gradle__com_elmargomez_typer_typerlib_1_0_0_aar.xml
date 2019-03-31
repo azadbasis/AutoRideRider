@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.elmargomez.typer:typerlib:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/typerlib-1.0.0.aar/31d781b6b0130559ae0ae80678b2eb33/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/typerlib-1.0.0.aar/31d781b6b0130559ae0ae80678b2eb33/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.elmargomez.typer/typerlib/1.0.0/32268793f1d9bc4e8495cefac2e991d8f2697b97/typerlib-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
